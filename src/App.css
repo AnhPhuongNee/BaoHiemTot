@@ -1,0 +1,48 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Đặt chiều cao cho toàn bộ trang */
+html, body, #root {
+  height: 100%;
+}
+
+/* Đặt font chữ chung cho toàn bộ ứng dụng */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Căn chỉnh chung cho các thành phần */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Căn chỉnh nội dung giữa trang */
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style chung cho các button */
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

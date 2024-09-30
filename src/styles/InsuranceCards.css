@@ -1,0 +1,62 @@
+.insurance-cards {
+    padding: 40px;
+    background-color: #fff7e8; /* Màu nền nhạt tương tự */
+  }
+  
+  .insurance-cards h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 calc(25% - 20px);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .card span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+  

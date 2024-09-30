@@ -1,0 +1,21 @@
+.package-info {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .package-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .package-info ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .package-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  

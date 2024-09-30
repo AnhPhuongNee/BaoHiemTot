@@ -1,0 +1,14 @@
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px;
+    background-color: #c6e4f0;
+  }
+  .nav-link {
+    margin-left: 100px;
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+  }
