@@ -1,5 +1,5 @@
-.hero {
-  background-color: #ffe7d4; /* Màu nền giống với hình */
+/* .hero {
+  background-color: #ffe7d4; 
   padding: 50px 20px;
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
 }
@@ -45,5 +45,83 @@
 .hero-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Bo tròn các góc của hình ảnh */
+  border-radius: 10px;
+} */
+.hero {
+  display: flex;
+  justify-content: space-between; /* Canh đều các phần tử khi hiển thị ngang */
+  align-items: center;
+  padding: 50px;
+  background-color: #f3e77e;
+}
+
+.hero-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.cta-button {
+  background-color: #8fbcec;
+  color: rgb(10, 0, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #2bb0d1;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #3de4e4;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Media Query cho thiết bị di động */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Hiển thị theo cột khi kích thước màn hình nhỏ */
+    text-align: center; /* Canh giữa nội dung khi hiển thị theo cột */
+  }
+
+  .hero-content {
+    margin-right: 0;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới để phần tử không dính vào nhau */
+  }
+
+  .hero h1 {
+    font-size: 1.5rem; /* Kích thước chữ nhỏ hơn trên màn hình di động */
+    white-space: nowrap; /* Giữ chữ trên 1 hàng, không xuống dòng */
+  }
+
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    width: 100%; /* Nút chiếm toàn bộ chiều ngang trên di động */
+    font-size: 1rem;
+    padding: 12px;
+  }
 }
